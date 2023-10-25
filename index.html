@@ -9,7 +9,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
-
 <body class="py-[20px]">
     <div class=" w-[100%] max-h-[100%] px-[20px] 2xl:relative ">
         <div
@@ -459,20 +458,20 @@
                 class="h-[349px] w-full bg-[#F0F8FF] inline-block  2xl:w-[349px] 2xl:absolute 2xl:left-[80px] 2xl:top-[30px] p-[15px] rounded-[20px]">
                 <div class=" flex flex-col justify-start gap-[10px] ">
                     <div class="flex justify-between items-center">
-                        <p>جمع کل سفارشات:</p>
-                        <p>0 تومان</p>
+                        <p >جمع کل سفارشات:</p>
+                        <p id="total-order-pay">0 تومان</p>
                     </div>
                     <div class="flex justify-between items-center">
-                        <p>حق سرویس و کارمزد:</p>
-                        <p>0 تومان</p>
+                        <p >حق سرویس و کارمزد:</p>
+                        <p id="service-right">0 تومان</p>
                     </div>
                     <div class="flex justify-between items-center">
                         <p>تخفیف:</p>
-                        <p>0 تومان</p>
+                        <p id="discount-item">0 تومان</p>
                     </div>
                     <div class="flex justify-between items-center">
-                        <input placeholder="کد تخفیف" class="w-[100%] h-[40px] pr-[5px] pl-0 ml-0">
-                        <button
+                        <input id="discount-code" placeholder="کد تخفیف" class="w-[100%] h-[40px] pr-[5px] pl-0 ml-0">
+                        <button onclick="discountBtnClickHandler()"
                             class="w-[50px] h-[40px] bg-[#9E1010] rounded-tl-[5px] rounded-bl-[5px] pr-0 mr-0 flex justify-center items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="white"
                                 class="bi bi-check-lg " viewBox="0 0 16 16">
@@ -485,7 +484,7 @@
                 <div class="w-[100%]  flex flex-col mt-[60px] gap-[10px] ">
                     <div class="flex justify-between items-center bg-[#FFC72C] h-[35px]">
                         <p>مبلغ قابل پرداخت:</p>
-                        <p>0 تومان</p>
+                        <p id="cost-pay-able">0 تومان</p>
                     </div>
                     <div class="h-[50px] text-center bg-[#D1D5DB] py-[10px]">
                         <button>ثبت سفارش</button>
@@ -494,12 +493,12 @@
             </div>
         </div>
     </div>
-    <div id="modal-Wrapper"
+    <div id="modal-register-order-Wrapper"
         class="hidden w-[100vw] h-[100vh] fixed top-0 left-0 opacit bg-white bg-opacity-[40%] items-center justify-center">
-        <div class="w-full max-w-[500px] h-[200px] rounded-[8px] bg-white flex flex-col justify-evenly items-center ">
+        <button onclick="registerOrderBtnClickHandler()" class="w-full max-w-[500px] h-[200px] rounded-[8px] bg-white flex flex-col justify-evenly items-center ">
             <p>سفارش شما با موفقیت ثبت شد.</p>
-            <button class="w-[120px] h-[60px] rounded-[5px] bg-[#9E1010] text-white">بستن</button>
-        </div>
+            <button   class="w-[120px] h-[60px] rounded-[5px] bg-[#9E1010] text-white">بستن</button>
+        </button>
     </div>
     <script src="./script.js"></script>
 </body>
