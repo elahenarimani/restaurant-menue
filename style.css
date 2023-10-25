@@ -11,7 +11,11 @@ body{
 .restaurant{
     box-shadow: 0 2px 1px rgba(0,0,0,0.09), 0 8px 4px rgba(0,0,0,0.09), 0 16px 8px rgba(0,0,0,0.09), 0 32px 16px rgba(0,0,0,0.09);
 }
+<<<<<<< HEAD
 #pay{
+=======
+.pay{
+>>>>>>> 6b703dd544c654d7ae277d1fda7d772e8666a6f1
     margin-left: auto;
     margin-right: auto;
 }
@@ -24,10 +28,15 @@ body{
     background: gray; 
     border-radius: 10px;
 }
+<<<<<<< HEAD
 
  #food-list > div {
     direction: ltr;
    
+=======
+ #food-list > div {
+    direction: ltr;
+>>>>>>> 6b703dd544c654d7ae277d1fda7d772e8666a6f1
 }
 .food{
     direction:rtl ;

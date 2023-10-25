@@ -1,4 +1,5 @@
 "use strict"
+<<<<<<< HEAD
 const amountOfItem = document.getElementById("amount-of-item");
 const numberFood = document.getElementById("number-food");
 const foodItem = document.querySelector("#food-item");
@@ -256,3 +257,5 @@ function registerOrderBtnClickHandler(){
 function syncFoodDataToLocalStorage(){
     localStorage.setItem("foodData" , JSON.stringify(food));
 }
+=======
+>>>>>>> 6b703dd544c654d7ae277d1fda7d772e8666a6f1
